@@ -13,11 +13,68 @@
             crossorigin="anonymous"
         />
         <!-- css link -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
         <title>Paypal Bank</title>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <div id="login-area">
+            <h1 class="text-center">Welcome to Paypal</h1>
+            <div class="submit-box">
+                <h2>Login</h2>
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Email"
+                /><br />
+                <input
+                    class="form-control"
+                    type="password"
+                    name=""
+                    id=""
+                    placeholder="Password"
+                /><br />
+                <button id="login" class="btn btn-success">Enter</button>
+            </div>
+        </div>
+        <div id="transition">
+            <h1>Transition Area</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="diposit status">
+                        <h2>Diposit</h2>
+                        <h1>$640</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw status">
+                        <h2>Withdrad</h2>
+                        <h1>$530</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance status">
+                        <h2>Balance</h2>
+                        <h1>$1200</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <div class="submit-box">
+                    <h3>Deposit</h3>
+                    <input id="dipositeAmount" type="text" class="form-control" placeholder="$amount you want to diposit"/><br />
+                    <button id="diposite" class="btn btn-success">Diposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-box">
+                    <h3>Withdrad</h3>
+                    <input type="text" class="form-control" placeholder="$amount you want to dithdraw"/><br />
+                    <button  class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script
@@ -25,5 +82,6 @@
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"
         ></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
