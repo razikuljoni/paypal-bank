@@ -37,24 +37,24 @@
             </div>
         </div>
         <div id="transition">
-            <h1>Transition Area</h1>
+            <h1 class="text-center mb-5">Transition Area</h1>
             <div class="row">
                 <div class="col-md-4">
                     <div class="diposit status">
-                        <h2>Diposit</h2>
-                        <h1>$640</h1>
+                        <h2>Deposit</h2>
+                        <h1>$ <span id="cDeposit">00</span></h1>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="withdraw status">
                         <h2>Withdrad</h2>
-                        <h1>$530</h1>
+                        <h1>$ <span id="cWithdraw">00</span></h1>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="balance status">
                         <h2>Balance</h2>
-                        <h1>$1200</h1>
+                        <h1>$ <span id="cBalance">1200</span></h1>
                     </div>
                 </div>
             </div>
@@ -62,15 +62,15 @@
                 <div class="col-md-6">
                 <div class="submit-box">
                     <h3>Deposit</h3>
-                    <input id="dipositeAmount" type="text" class="form-control" placeholder="$amount you want to diposit"/><br />
-                    <button id="diposite" class="btn btn-success">Diposit</button>
+                    <input id="depositAmount" type="text" class="form-control" placeholder="$amount you want to diposit"/><br />
+                    <button id="deposit" class="btn btn-success">Diposit</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="submit-box">
                     <h3>Withdrad</h3>
-                    <input type="text" class="form-control" placeholder="$amount you want to dithdraw"/><br />
-                    <button  class="btn btn-success">Withdraw</button>
+                    <input id="wAmount" type="text" class="form-control" placeholder="$amount you want to dithdraw"/><br />
+                    <button id="wBtn" class="btn btn-success">Withdraw</button>
                 </div>
             </div>
             </div>
